@@ -1,0 +1,337 @@
+// Main font
+@font-face {
+    font-family: "Mulish";
+    src: url("/css/fonts/mulish-regular.woff2") format("woff2");
+    src: url("/css/fonts/mulish-regular.woff") format("woff");
+    src: url("/css/fonts/mulish-regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@mixin mulish-regular {
+    font-family: "Mulish";
+    font-weight: 400;
+    font-style: normal;
+}
+
+// Content width
+@mixin desktop-container {
+    max-width: $desktop-container-width;
+    margin: 0 auto;
+}
+
+// Corporate colors
+$mtp-white: #f3f9fa;
+$mtp-black: #0a0a0a;
+$mtp-cyan: #7df9ff;
+$mtp-blue: #2ebadc;
+$mtp-grey: #D9D9D9;
+
+$desktop-container-width: 1500px;
+
+.container {
+    @include desktop-container;
+}
+
+// Main elements
+.button__black {
+    @include mulish-regular;
+    color: $mtp-white;
+    font-size: 18px;
+    text-decoration: none;
+    border: 1px solid $mtp-white;
+    border-radius: 20px;
+    text-transform: uppercase;
+    background-color: $mtp-black;
+    padding: 8px 30px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.button__white {
+    @include mulish-regular;
+    color: $mtp-black;
+    font-size: 18px;
+    text-decoration: none;
+    border: 1px solid $mtp-black;
+    border-radius: 20px;
+    text-transform: uppercase;
+    background-color: $mtp-white;
+    padding: 8px 30px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.drop-cap {
+    color: $mtp-cyan;
+}
+
+.h1 {
+    @include mulish-regular;
+    color: $mtp-black;
+    font-size: 64px;
+    margin: 0;
+}
+
+.h2 {
+    @include mulish-regular;
+    color: $mtp-black;
+    font-size: 48px;
+    margin: 0;
+}
+
+.h3 {
+    @include mulish-regular;
+    color: $mtp-black;
+    font-size: 40px;
+    margin: 0;
+}
+
+.subheading {
+    @include mulish-regular;
+    color: $mtp-black;
+    font-size: 28px;
+    line-height: 36px;
+    margin: 0;
+}
+
+.text {
+    @include mulish-regular;
+    color: $mtp-black;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+// Header
+.header {
+    background-color: $mtp-black;
+    display: grid;
+    grid-template-columns: 17% auto 35%;
+    grid-template-rows: 80px;
+    justify-items: end;
+    align-items: center;
+    padding: 0 70px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    &__logo {
+        width: 210px;
+        height: 40px;
+    }
+
+    &__list {
+        @include mulish-regular;
+        color: $mtp-white;
+        font-size: 22px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    &__list-item {
+        list-style-type: none;
+        margin-left: 45px;
+    }
+}
+
+// Main page
+.intro {
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+    justify-content: center;
+
+    &__img {
+        width: 75%;
+        height: auto;
+    }
+
+    &__h1 {
+        margin-bottom: 70px;
+        width: 560px;
+    }
+
+    &__text {
+        margin-bottom: 100px;
+        width: 580px;
+    }
+}
+
+.advantages {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+
+    &__h2 {
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+
+    &__paragraphs {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    &__text {
+        width: 40%;
+    }
+}
+
+.statistics {
+    padding: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $mtp-grey;
+        width: 300px;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 10px;
+    }
+}
+
+.why-us {
+    padding: 75px 0;
+    background-color: $mtp-black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &__image {
+        width: 70%;
+    }
+
+    &__h2 {
+        padding-bottom: 50px;
+        color: $mtp-white;
+    }
+
+    &__subheading {
+        width: 580px;
+        color: $mtp-white;
+        padding-bottom: 75px;
+    }
+}
+
+.services {
+    padding: 75px 0;
+    display: flex;
+    flex-direction: column;
+
+    &__h2 {
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+    &__subheading {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row: auto;
+        row-gap: 50px;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &__img {
+                width: 20%;
+                padding-bottom: 20px;
+            }
+        }
+
+        &__h3 {
+            text-align: center;
+        }
+
+        &__text {
+            width: 80%;
+            text-align: center;
+        }
+    }
+}
+
+.footer {
+    @include mulish-regular;
+    color: $mtp-white;
+    background-color: $mtp-black;
+
+    &__contacts {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 50px 0;
+
+        &__block1 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        &__text {
+            text-transform: uppercase;
+            font-size: 24px;
+            margin: 0;
+        }
+
+        &__link {
+            text-decoration: none;
+            color: $mtp-white;
+        }
+
+        &__phone {
+            font-size: 36px;
+            margin: 0;
+            padding-top: 10px;
+            cursor: pointer;
+        }
+    }
+
+    &__img {
+        width: 105px;
+        padding-right: 30px;
+    }
+
+    &__line {
+        width: $desktop-container-width;
+    }
+
+    &__copyright {
+        padding: 50px 0 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        &__link {
+            color: $mtp-white;
+            text-decoration: none;
+            cursor: pointer;
+
+            &__divider::after {
+                content: "|";
+                padding: 0 5px 0 10px;
+            }
+        }
+    }
+}
