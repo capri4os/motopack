@@ -1,42 +1,33 @@
 <!DOCTYPE html>
 <html lang="tr">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/css/style.css">
-<link rel="stylesheet" href="/css/normalize.css">
-<title>Restoran ve Kafeler İçin Profesyonel Kurye Outsourcing Hizmetleri | MotoPack</title>
-<meta name="description"
-    content="MotoPack, restoran ve kafeler için güvenilir ve hızlı kurye outsourcing hizmetleri sunmaktadır. Siparişlerinizin zamanında ve güvenli bir şekilde teslim edilmesini sağlıyoruz. İşletmenizin verimliliğini artırın ve müşteri memnuniyetini en üst düzeye çıkarın. MotoPack ile profesyonel kurye hizmetlerini keşfedin!">
-<meta name="og:title" content="Restoran ve Kafeler İçin Profesyonel Kurye Outsourcing Hizmetleri | MotoPack">
-<meta name="og:description"
-    content="MotoPack, restoran ve kafeler için güvenilir ve hızlı kurye outsourcing hizmetleri sunmaktadır. Siparişlerinizin zamanında ve güvenli bir şekilde teslim edilmesini sağlıyoruz. İşletmenizin verimliliğini artırın ve müşteri memnuniyetini en üst düzeye çıkarın. MotoPack ile profesyonel kurye hizmetlerini keşfedin!">
-<meta name="og:image" content="/images/motopack-logo.png">
-<meta property="og:url" content="https://motopack.com.tr/">
-<meta name="format-detection" content="telephone=no">
-<meta name="author" content="kata.ws">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <title>Restoran ve Kafeler İçin Profesyonel Kurye Outsourcing Hizmetleri | MotoPack</title>
+    <meta name="description"
+        content="MotoPack, restoran ve kafeler için güvenilir ve hızlı kurye outsourcing hizmetleri sunmaktadır. Siparişlerinizin zamanında ve güvenli bir şekilde teslim edilmesini sağlıyoruz. İşletmenizin verimliliğini artırın ve müşteri memnuniyetini en üst düzeye çıkarın. MotoPack ile profesyonel kurye hizmetlerini keşfedin!">
+    <meta name="og:title" content="Restoran ve Kafeler İçin Profesyonel Kurye Outsourcing Hizmetleri | MotoPack">
+    <meta name="og:description"
+        content="MotoPack, restoran ve kafeler için güvenilir ve hızlı kurye outsourcing hizmetleri sunmaktadır. Siparişlerinizin zamanında ve güvenli bir şekilde teslim edilmesini sağlıyoruz. İşletmenizin verimliliğini artırın ve müşteri memnuniyetini en üst düzeye çıkarın. MotoPack ile profesyonel kurye hizmetlerini keşfedin!">
+    <meta name="og:image" content="/images/motopack-logo.png">
+    <meta property="og:url" content="https://motopack.com.tr/">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="kata.ws">
 </head>
 
 <body>
     <header class="header">
-        <img src="/images/menu-icon.svg" class="header__menu__icon">
+        <img src="/images/menu-icon.svg" alt="Mobile Menu Icon" title="Mobile Menu Icon" class="header__menu__icon">
         <a href="/index.html"><img src="/images/motopack-logo.png" alt="Motopack Logo" title="Motopack Logo"
                 class="header__logo"></a>
         <nav class="menu">
-            <ul class="menu__list">
-                <a href="/hakkimizda.html" class="menu__link">
-                    <li class="menu__list__item">Hakkımızda</li>
-                </a>
-                <a href="/hizmetlerimiz.html" class="menu__link">
-                    <li class="menu__list__item">Hizmetlerimiz</li>
-                </a>
-                <a href="/referanslar.html" class="menu__link">
-                    <li class="menu__list__item">Referanslar</li>
-                </a>
-                <a href="/iletisim.html" class="menu__link">
-                    <li class="menu__list__item">İletişim</li>
-                </a>
-            </ul>
+            <a href="/hakkimizda.html" class="menu__item">Hakkımızda</a>
+            <a href="/hizmetlerimiz.html" class="menu__item">Hizmetlerimiz</a>
+            <a href="/referanslar.html" class="menu__item">Referanslar</a>
+            <a href="/iletisim.html" class="menu__item">İletişim</a>
         </nav>
         <div>
             <a href="/kurye-ol.html" class="button__black">Kurye Ol</a>
@@ -45,28 +36,17 @@
     </header>
     <div class="mobile-menu" hidden>
         <hr class="mobile-menu__line">
-        <img src="/images/close-icon.svg" class="mobile-menu__close">
-        <ul class="mobile-menu__list">
-            <a href="/hakkimizda.html" class="menu__link">
-                <li class="mobile-menu__list__item">Hakkımızda</li>
-            </a>
-            <a href="/hizmetlerimiz.html" class="menu__link">
-                <li class="mobile-menu__list__item">Hizmetlerimiz</li>
-            </a>
-            <a href="/referanslar.html" class="menu__link">
-                <li class="mobile-menu__list__item">Referanslar</li>
-            </a>
-            <a href="/iletisim.html" class="menu__link">
-                <li class="mobile-menu__list__item">İletişim</li>
-            </a>
-            <a href="/kurye-ol.html" class="menu__link">
-                <li class="mobile-menu__list__item mobile-menu__list__item_blue">Kurye Ol</li>
-            </a>
-            <a href="/kurye-hizmeti-al.html" class="menu__link">
-                <li class="mobile-menu__list__item mobile-menu__list__item_blue">Kurye Hizmeti Al</li>
-            </a>
-
-        </ul>
+        <img src="/images/close-icon.svg" class="mobile-menu__close" alt="Mobile Menu Close Icon"
+            title="Mobile Menu Close Icon">
+        <nav class="mobile-menu__list">
+            <a href="/hakkimizda.html" class="mobile-menu__list__item">Hakkımızda</a>
+            <a href="/hizmetlerimiz.html" class="mobile-menu__list__item">Hizmetlerimiz</a>
+            <a href="/referanslar.html" class="mobile-menu__list__item">Referanslar</a>
+            <a href="/iletisim.html" class="mobile-menu__list__item">İletişim</a>
+            <a href="/kurye-ol.html" class="mobile-menu__list__item mobile-menu__list__item_blue">Kurye Ol</a>
+            <a href="/kurye-hizmeti-al.html" class="mobile-menu__list__item mobile-menu__list__item_blue">Kurye Hizmeti
+                Al</a>
+        </nav>
     </div>
     <main class="main">
         <section class="intro container">
@@ -110,17 +90,21 @@
             </div>
         </div>
         <section class="why-us">
-            <div>
-                <img src="/images/main-page/motopack-full-logo.png" alt="Motopack Full Logo" title="Motopack Full Logo"
-                    class="why-us__image">
+            <div class="why-us__wrap">
+                <div>
+                    <img src="/images/main-page/motopack-full-logo.png" alt="Motopack Full Logo"
+                        title="Motopack Full Logo" class="why-us__image">
+                </div>
+                <div>
+                    <h2 class="h2 why-us__h2"><span class="drop-cap">M</span>otopack nedir?</h2>
+                    <p class="subheading why-us__subheading">Motopack’i farklı kılan benzersiz avantajları keşfedin ve
+                        işletmenizin
+                        kurye deneyimini geliştirin.
+                    </p>
+                </div>
             </div>
-            <div>
-                <h2 class="h2 why-us__h2">Neden <span class="drop-cap">M</span>otopack?</h2>
-                <p class="subheading why-us__subheading">Motopack’i farklı kılan benzersiz avantajları keşfedin ve
-                    işletmenizin
-                    kurye deneyimini geliştirin.
-                </p>
-                <a href="#" class="button__black">Hemen Başvur</a>
+            <div class="why-us__wrap2">
+                <a href="#" class="button__black why-us__btn">Hemen Başvur</a>
             </div>
         </section>
         <section class="services container">
