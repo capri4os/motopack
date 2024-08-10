@@ -631,6 +631,42 @@ $mobile-320-container-width: 280px;
     }
 }
 
+// Referanslar page
+.clients {
+    background-color: $mtp-black;
+    padding: 100px 0;
+
+    &__h1 {
+        color: $mtp-white;
+        padding-bottom: 70px;
+    }
+
+    &__text {
+        color: $mtp-white;
+        width: 80%;
+    }
+
+    &__wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+.companies {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 100px 0;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &__img {
+        width: 140px;
+        padding: 10px;
+    }
+}
+
 // Laptop styles
 @media screen and (max-width: 1440px) {
     .container {
@@ -948,6 +984,31 @@ $mobile-320-container-width: 280px;
                     padding-top: 20px;
                 }
             }
+        }
+    }
+
+    .clients {
+        padding: 70px 0;
+
+        &__wrap {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__h1 {
+            padding-bottom: 30px;
+            text-align: center;
+        }
+
+        &__text {
+            padding-bottom: 50px;
+            text-align: center;
+            display: inline-block;
+            width: auto;
+        }
+
+        &__img {
+            width: 80%;
         }
     }
 }
