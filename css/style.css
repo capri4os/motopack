@@ -89,6 +89,7 @@
   color: #0a0a0a;
   font-size: 24px;
   line-height: 32px;
+  margin: 0;
 }
 
 .a {
@@ -430,6 +431,117 @@
   width: 80%;
 }
 
+.facilities {
+  background-color: #0a0a0a;
+}
+.facilities__wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 100px 0;
+}
+.facilities__h1 {
+  padding-bottom: 70px;
+  color: #f3f9fa;
+}
+.facilities__text {
+  width: 80%;
+  color: #f3f9fa;
+}
+
+.featured-services {
+  padding: 100px 0;
+  text-align: center;
+}
+.featured-services__h2 {
+  padding-bottom: 20px;
+}
+.featured-services__text {
+  width: 40%;
+  display: inline-block;
+  padding-bottom: 70px;
+}
+.featured-services__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.featured-services__list__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.featured-services__list__item__img {
+  width: 100px;
+  padding-bottom: 20px;
+}
+.featured-services__list__item__h3 {
+  padding-bottom: 20px;
+}
+.featured-services__list__item__text {
+  width: 80%;
+}
+
+.reasons {
+  background-color: #0a0a0a;
+  padding: 100px 0;
+}
+.reasons__wrap {
+  text-align: center;
+}
+.reasons__h2 {
+  padding-bottom: 20px;
+  color: #f3f9fa;
+}
+.reasons__text {
+  width: 60%;
+  display: inline-block;
+  padding-bottom: 70px;
+  color: #f3f9fa;
+}
+.reasons__list {
+  display: flex;
+  flex-direction: row;
+}
+.reasons__list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.reasons__list__item__h3 {
+  color: #f3f9fa;
+  padding-bottom: 20px;
+}
+.reasons__list__item__text {
+  color: #f3f9fa;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.boost {
+  background-image: url(/images/hizmetlerimiz/iletisim-background.jpg);
+  background-size: cover;
+  padding: 100px 0;
+}
+.boost__wrap {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.boost__h2 {
+  padding-bottom: 20px;
+  color: #f3f9fa;
+}
+.boost__text {
+  padding-bottom: 70px;
+  width: 70%;
+  color: #f3f9fa;
+  display: inline-block;
+}
+
 @media screen and (max-width: 1440px) {
   .container {
     max-width: 1100px;
@@ -631,6 +743,37 @@
   .about {
     padding-top: 70px;
   }
+  .facilities__wrap,
+  .featured-services,
+  .reasons,
+  .boost {
+    padding: 70px 0;
+  }
+  .facilities__h1 {
+    padding-bottom: 40px;
+  }
+  .facilities__text {
+    padding-bottom: 40px;
+    display: inline-block;
+  }
+  .facilities__wrap {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .featured-services__text {
+    padding-bottom: 30px;
+    width: 65%;
+  }
+  .featured-services__list {
+    flex-direction: column;
+  }
+  .featured-services__list__item__text {
+    width: 60%;
+  }
+  .featured-services__list__item__img {
+    padding-top: 20px;
+  }
 }
 @media screen and (max-width: 425px) {
   .container,
@@ -741,6 +884,24 @@
   .values__item__text {
     width: 80%;
   }
+  .facilities__wrap,
+  .featured-services,
+  .reasons,
+  .boost {
+    padding: 50px 0;
+  }
+  .facilities__img {
+    width: 80%;
+  }
+  .reasons__text {
+    width: 90%;
+  }
+  .reasons__list {
+    flex-direction: column;
+  }
+  .reasons__list__item {
+    padding-bottom: 20px;
+  }
 }
 @media screen and (max-width: 375px) {
   .container,
@@ -781,6 +942,18 @@
   }
   .text {
     line-height: 20px;
+  }
+  .facilities__text {
+    width: 90%;
+  }
+  .featured-services__text {
+    width: 80%;
+  }
+  .featured-services__list__item__text {
+    width: 90%;
+  }
+  .boost__text {
+    width: 90%;
   }
 }
 @media screen and (max-width: 320px) {

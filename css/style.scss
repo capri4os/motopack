@@ -105,6 +105,7 @@ $mobile-320-container-width: 280px;
     color: $mtp-black;
     font-size: 24px;
     line-height: 32px;
+    margin: 0;
 }
 
 .a {
@@ -498,6 +499,138 @@ $mobile-320-container-width: 280px;
     }
 }
 
+// Hizmetlerimiz page
+.facilities {
+    background-color: $mtp-black;
+
+    &__wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 100px 0;
+    }
+
+    &__h1 {
+        padding-bottom: 70px;
+        color: $mtp-white;
+    }
+
+    &__text {
+        width: 80%;
+        color: $mtp-white;
+    }
+}
+
+.featured-services {
+    padding: 100px 0;
+    text-align: center;
+
+    &__h2 {
+        padding-bottom: 20px;
+    }
+
+    &__text {
+        width: 40%;
+        display: inline-block;
+        padding-bottom: 70px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+
+            &__img {
+                width: 100px;
+                padding-bottom: 20px;
+            }
+
+            &__h3 {
+                padding-bottom: 20px;
+            }
+
+            &__text {
+                width: 80%;
+            }
+        }
+    }
+}
+
+.reasons {
+    background-color: $mtp-black;
+    padding: 100px 0;
+
+    &__wrap {
+        text-align: center;
+    }
+
+    &__h2 {
+        padding-bottom: 20px;
+        color: $mtp-white;
+    }
+
+    &__text {
+        width: 60%;
+        display: inline-block;
+        padding-bottom: 70px;
+        color: $mtp-white;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            &__h3 {
+                color: $mtp-white;
+                padding-bottom: 20px;
+            }
+
+            &__text {
+                color: $mtp-white;
+                text-align: left;
+                padding-right: 20px;
+            }
+        }
+    }
+}
+
+.boost {
+    background-image: url(/images/hizmetlerimiz/iletisim-background.jpg);
+    background-size: cover;
+    padding: 100px 0;
+
+    &__wrap {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__h2 {
+        padding-bottom: 20px;
+        color: $mtp-white;
+    }
+
+    &__text {
+        padding-bottom: 70px;
+        width: 70%;
+        color: $mtp-white;
+        display: inline-block;
+    }
+}
+
 // Laptop styles
 @media screen and (max-width: 1440px) {
     .container {
@@ -772,8 +905,54 @@ $mobile-320-container-width: 280px;
     .about {
         padding-top: 70px;
     }
+
+    .facilities__wrap,
+    .featured-services,
+    .reasons,
+    .boost {
+        padding: 70px 0;
+    }
+
+    .facilities {
+        &__h1 {
+            padding-bottom: 40px;
+        }
+
+        &__text {
+            padding-bottom: 40px;
+            display: inline-block;
+        }
+
+        &__wrap {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    .featured-services {
+        &__text {
+            padding-bottom: 30px;
+            width: 65%;
+        }
+
+        &__list {
+            flex-direction: column;
+
+            &__item {
+                &__text {
+                    width: 60%;
+                }
+
+                &__img {
+                    padding-top: 20px;
+                }
+            }
+        }
+    }
 }
 
+// Phone styles
 @media screen and (max-width: 425px) {
 
     .container,
@@ -919,7 +1098,33 @@ $mobile-320-container-width: 280px;
                 width: 80%;
             }
         }
+    }
 
+    .facilities__wrap,
+    .featured-services,
+    .reasons,
+    .boost {
+        padding: 50px 0;
+    }
+
+    .facilities {
+        &__img {
+            width: 80%;
+        }
+    }
+
+    .reasons {
+        &__text {
+            width: 90%;
+        }
+
+        &__list {
+            flex-direction: column;
+
+            &__item {
+                padding-bottom: 20px;
+            }
+        }
     }
 }
 
@@ -978,6 +1183,32 @@ $mobile-320-container-width: 280px;
 
     .text {
         line-height: 20px;
+    }
+
+    .facilities {
+        &__text {
+            width: 90%;
+        }
+    }
+
+    .featured-services {
+        &__text {
+            width: 80%;
+        }
+
+        &__list {
+            &__item {
+                &__text {
+                    width: 90%;
+                }
+            }
+        }
+    }
+
+    .boost {
+        &__text {
+            width: 90%;
+        }
     }
 }
 
