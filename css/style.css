@@ -573,6 +573,67 @@
   padding: 10px;
 }
 
+.contact-us {
+  background-color: #0a0a0a;
+  padding: 100px 0;
+}
+.contact-us__wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.contact-us__h1 {
+  color: #f3f9fa;
+  padding-bottom: 70px;
+}
+.contact-us__text {
+  color: #f3f9fa;
+}
+.contact-us__img {
+  width: 80%;
+}
+
+.contact-form {
+  padding: 100px 0;
+}
+.contact-form__h2 {
+  text-align: center;
+  padding-bottom: 70px;
+}
+.contact-form__wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.contact-form__h3 {
+  padding-bottom: 5px;
+}
+.contact-form__text {
+  padding-bottom: 20px;
+  width: 70%;
+}
+.contact-form__label {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.contact-form__input {
+  border: 1px solid #D9D9D9;
+  border-radius: 10px;
+  height: 35px;
+  width: 90%;
+  margin-top: 5px;
+}
+.contact-form__textarea {
+  border: 1px solid #D9D9D9;
+  border-radius: 10px;
+  width: 90%;
+  margin-top: 5px;
+}
+.contact-form__btn {
+  margin-top: 50px;
+}
+
 @media screen and (max-width: 1440px) {
   .container {
     max-width: 1100px;
@@ -825,6 +886,32 @@
   .clients__img {
     width: 80%;
   }
+  .contact-us {
+    padding: 70px 0;
+  }
+  .contact-us__wrap {
+    flex-direction: column;
+    text-align: center;
+  }
+  .contact-us__h1 {
+    padding-bottom: 40px;
+  }
+  .contact-us__img {
+    width: 40%;
+    padding-top: 70px;
+  }
+  .contact-form {
+    padding: 70px 0;
+  }
+  .contact-form__wrap {
+    flex-direction: column;
+  }
+  .contact-form__h2 {
+    padding-bottom: 40px;
+  }
+  .contact-form__text {
+    width: auto;
+  }
 }
 @media screen and (max-width: 425px) {
   .container,
@@ -953,6 +1040,10 @@
   .reasons__list__item {
     padding-bottom: 20px;
   }
+  .contact-form__input,
+  .contact-form__textarea {
+    width: auto;
+  }
 }
 @media screen and (max-width: 375px) {
   .container,
@@ -1023,5 +1114,8 @@
   .button__black,
   .button__white {
     padding: 3px 15px;
+  }
+  .footer__contacts__social-icon {
+    width: 25px;
   }
 }/*# sourceMappingURL=style.css.map */

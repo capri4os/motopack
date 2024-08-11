@@ -667,6 +667,80 @@ $mobile-320-container-width: 280px;
     }
 }
 
+// Iletisim page
+.contact-us {
+    background-color: $mtp-black;
+    padding: 100px 0;
+
+    &__wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    &__h1 {
+        color: $mtp-white;
+        padding-bottom: 70px;
+    }
+
+    &__text {
+        color: $mtp-white;
+    }
+
+    &__img {
+        width: 80%;
+    }
+}
+
+.contact-form {
+    padding: 100px 0;
+
+    &__h2 {
+        text-align: center;
+        padding-bottom: 70px;
+    }
+
+    &__wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    &__h3 {
+        padding-bottom: 5px;
+    }
+
+    &__text {
+        padding-bottom: 20px;
+        width: 70%;
+    }
+
+    &__label {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    &__input {
+        border: 1px solid $mtp-grey;
+        border-radius: 10px;
+        height: 35px;
+        width: 90%;
+        margin-top: 5px;
+    }
+
+    &__textarea {
+        border: 1px solid $mtp-grey;
+        border-radius: 10px;
+        width: 90%;
+        margin-top: 5px;
+    }
+
+    &__btn {
+        margin-top: 50px;
+    }
+}
+
 // Laptop styles
 @media screen and (max-width: 1440px) {
     .container {
@@ -1011,6 +1085,40 @@ $mobile-320-container-width: 280px;
             width: 80%;
         }
     }
+
+    .contact-us {
+        padding: 70px 0;
+
+        &__wrap {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &__h1 {
+            padding-bottom: 40px;
+        }
+
+        &__img {
+            width: 40%;
+            padding-top: 70px;
+        }
+    }
+
+    .contact-form {
+        padding: 70px 0;
+
+        &__wrap {
+            flex-direction: column;
+        }
+
+        &__h2 {
+            padding-bottom: 40px;
+        }
+
+        &__text {
+            width: auto;
+        }
+    }
 }
 
 // Phone styles
@@ -1187,6 +1295,11 @@ $mobile-320-container-width: 280px;
             }
         }
     }
+
+    .contact-form__input,
+    .contact-form__textarea {
+        width: auto;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -1293,5 +1406,9 @@ $mobile-320-container-width: 280px;
     .button__black,
     .button__white {
         padding: 3px 15px;
+    }
+
+    .footer__contacts__social-icon {
+        width: 25px;
     }
 }
