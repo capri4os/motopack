@@ -634,6 +634,22 @@
   margin-top: 50px;
 }
 
+.politics {
+  padding: 100px 0;
+}
+.politics__h1 {
+  padding-bottom: 20px;
+  font-size: 44px;
+}
+.politics__h2 {
+  padding-bottom: 15px;
+  font-size: 36px;
+}
+.politics__text {
+  padding-bottom: 10px;
+  line-height: 34px;
+}
+
 @media screen and (max-width: 1440px) {
   .container {
     max-width: 1100px;

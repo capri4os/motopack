@@ -741,6 +741,26 @@ $mobile-320-container-width: 280px;
     }
 }
 
+// Politics
+.politics {
+    padding: 100px 0;
+
+    &__h1 {
+        padding-bottom: 20px;
+        font-size: 44px;
+    }
+
+    &__h2 {
+        padding-bottom: 15px;
+        font-size: 36px;
+    }
+
+    &__text {
+        padding-bottom: 10px;
+        line-height: 34px;
+    }
+}
+
 // Laptop styles
 @media screen and (max-width: 1440px) {
     .container {
