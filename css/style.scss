@@ -1,9 +1,9 @@
 // Main font
 @font-face {
     font-family: "Mulish";
-    src: url("css/fonts/mulish-regular.woff2") format("woff2");
-    src: url("css/fonts/mulish-regular.woff") format("woff");
-    src: url("css/fonts/mulish-regular.ttf") format("truetype");
+    src: url("../css/fonts/mulish-regular.woff2") format("woff2");
+    src: url("../css/fonts/mulish-regular.woff") format("woff");
+    src: url("../css/fonts/mulish-regular.ttf") format("truetype");
     font-weight: 400;
     font-style: normal;
 }
@@ -606,7 +606,7 @@ $mobile-320-container-width: 280px;
 }
 
 .boost {
-    background-image: url(images/hizmetlerimiz/iletisim-background.jpg);
+    background-image: url(../images/hizmetlerimiz/iletisim-background.jpg);
     background-size: cover;
     padding: 100px 0;
 
