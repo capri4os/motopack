@@ -612,26 +612,76 @@
   padding-bottom: 20px;
   width: 70%;
 }
-.contact-form__label {
+.contact-form__btn {
+  margin-top: 50px;
+}
+
+.form__label {
   display: flex;
   flex-direction: column;
   padding-bottom: 20px;
 }
-.contact-form__input {
+.form__input {
   border: 1px solid #D9D9D9;
   border-radius: 10px;
   height: 35px;
   width: 90%;
   margin-top: 5px;
 }
-.contact-form__textarea {
+.form__textarea {
   border: 1px solid #D9D9D9;
   border-radius: 10px;
   width: 90%;
   margin-top: 5px;
 }
-.contact-form__btn {
-  margin-top: 50px;
+.form__select {
+  border: 1px solid #D9D9D9;
+  border-radius: 10px;
+  height: 40px;
+  width: auto;
+  margin-top: 5px;
+}
+
+.get-service {
+  padding: 100px 0;
+}
+.get-service__h1 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.get-service__h2 {
+  text-align: center;
+  padding: 70px 0 35px;
+}
+.get-service__text {
+  text-align: center;
+}
+.get-service__wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.get-service__wrap__textarea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.get-service__wrap__textarea__width {
+  width: 890px;
+}
+.get-service__city-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.get-service__city-wrap__select {
+  width: 190px;
+}
+.get-service__label {
+  width: 390px;
+}
+.get-service__input {
+  width: 390px;
 }
 
 .politics {
@@ -748,6 +798,9 @@
   }
   .why-us__subheading {
     width: 400px;
+  }
+  .get-service__wrap__textarea__width {
+    width: 820px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -928,6 +981,24 @@
   .contact-form__text {
     width: auto;
   }
+  .get-service {
+    padding: 70px 0;
+  }
+  .get-service__h2 {
+    padding: 50px 0 25px;
+  }
+  .get-service__label {
+    width: 300px;
+  }
+  .get-service__input {
+    width: 300px;
+  }
+  .get-service__wrap__textarea__width {
+    width: 620px;
+  }
+  .get-service__city-wrap__select {
+    width: 145px;
+  }
 }
 @media screen and (max-width: 425px) {
   .container,
@@ -1056,9 +1127,24 @@
   .reasons__list__item {
     padding-bottom: 20px;
   }
-  .contact-form__input,
-  .contact-form__textarea {
+  .form__input,
+  .form__textarea {
     width: auto;
+  }
+  .get-service {
+    padding: 50px 0;
+  }
+  .get-service__h2 {
+    padding: 30px 0 15px;
+  }
+  .get-service__wrap {
+    flex-direction: column;
+  }
+  .get-service__label {
+    width: 360px;
+  }
+  .get-service__input {
+    width: 360px;
   }
 }
 @media screen and (max-width: 375px) {
@@ -1113,6 +1199,15 @@
   .boost__text {
     width: 90%;
   }
+  .get-service__label {
+    width: 310px;
+  }
+  .get-service__input {
+    width: 310px;
+  }
+  .get-service__city-wrap__select {
+    width: 130px;
+  }
 }
 @media screen and (max-width: 320px) {
   .container,
@@ -1133,5 +1228,17 @@
   }
   .footer__contacts__social-icon {
     width: 25px;
+  }
+  .get-service__label {
+    width: 280px;
+  }
+  .get-service__input {
+    width: 280px;
+  }
+  .get-service__wrap__textarea__width {
+    width: 280px;
+  }
+  .get-service__city-wrap__select {
+    width: 130px;
   }
 }/*# sourceMappingURL=style.css.map */

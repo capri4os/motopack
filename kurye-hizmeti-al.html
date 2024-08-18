@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <title>Kurye Hizmeti Al | MotoPack - Kurye Hizmeti Başvuru Formu</title>
+    <meta name="description"
+        content="Restoran veya kafeniz için MotoPack'in profesyonel kurye hizmetlerinden yararlanmak mı istiyorsunuz? Kurye hizmeti başvuru formumuzu doldurarak güvenilir ve hızlı teslimat çözümlerimize hemen ulaşın. İşletmenizin verimliliğini artırmak ve müşteri memnuniyetini sağlamak için MotoPack'i tercih edin. Kurye hizmeti almak için hemen başvurun!">
+    <meta name="og:title" content="Kurye Hizmeti Al | MotoPack - Kurye Hizmeti Başvuru Formu">
+    <meta name="og:description"
+        content="Restoran veya kafeniz için MotoPack'in profesyonel kurye hizmetlerinden yararlanmak mı istiyorsunuz? Kurye hizmeti başvuru formumuzu doldurarak güvenilir ve hızlı teslimat çözümlerimize hemen ulaşın. İşletmenizin verimliliğini artırmak ve müşteri memnuniyetini sağlamak için MotoPack'i tercih edin. Kurye hizmeti almak için hemen başvurun!">
+    <meta name="og:image" content="images/motopack-logo.png">
+    <meta property="og:url" content="https://motopack.com.tr/">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="kata.ws">
+    <link rel="icon" href="images/motopack-favicon.ico">
+    <link rel="shortcut icon" href="images/motopack-favicon.ico">
+</head>
+
+<body>
+    <header class="header">
+        <img src="images/menu-icon.svg" alt="Mobile Menu Icon" title="Mobile Menu Icon" class="header__menu__icon">
+        <a href="index.html"><img src="images/motopack-logo.png" alt="Motopack Logo" title="Motopack Logo"
+                class="header__logo"></a>
+        <nav class="menu">
+            <a href="hakkimizda.html" class="menu__item">Hakkımızda</a>
+            <a href="hizmetlerimiz.html" class="menu__item">Hizmetlerimiz</a>
+            <a href="referanslar.html" class="menu__item">Referanslar</a>
+            <a href="iletisim.html" class="menu__item">İletişim</a>
+        </nav>
+        <div>
+            <a href="kurye-ol.html" class="button__black">Kurye Ol</a>
+            <a href="kurye-hizmeti-al.html" class="button__black button__kurye-hizmeti-al">Kurye Hizmeti Al</a>
+        </div>
+    </header>
+    <div class="mobile-menu" hidden>
+        <hr class="mobile-menu__line">
+        <img src="images/close-icon.svg" class="mobile-menu__close" alt="Mobile Menu Close Icon"
+            title="Mobile Menu Close Icon">
+        <nav class="mobile-menu__list">
+            <a href="hakkimizda.html" class="mobile-menu__list__item">Hakkımızda</a>
+            <a href="hizmetlerimiz.html" class="mobile-menu__list__item">Hizmetlerimiz</a>
+            <a href="referanslar.html" class="mobile-menu__list__item">Referanslar</a>
+            <a href="iletisim.html" class="mobile-menu__list__item">İletişim</a>
+            <a href="kurye-ol.html" class="mobile-menu__list__item mobile-menu__list__item_blue">Kurye Ol</a>
+            <a href="kurye-hizmeti-al.html" class="mobile-menu__list__item mobile-menu__list__item_blue">Kurye Hizmeti
+                Al</a>
+        </nav>
+    </div>
+    <main>
+        <section class="get-service container">
+            <h1 class="h1 get-service__h1">Kurumsal Başvuru</h1>
+            <p class="text get-service__text">Kurye ihtiyaçlarınız için aşağıdaki formu doldurun, size kısa sürede
+                ulaşalım.</p>
+            <form action="https://formspree.io/f/manwdyak" method="post" autocomplete="on" accept-charset="UTF-8">
+                <h2 class="h2 get-service__h2">İletişim Bilgileri</h2>
+                <div class="get-service__wrap">
+                    <div>
+                        <label for="full-name" class="text form__label get-service__label">Adınız, Soyadınız
+                            <input id="full-name" type="text" name="full-name" required minlength="3" maxlength="30"
+                                class="form__input get-service__input">
+                        </label>
+                        <label for="email" class="text form__label get-service__label">E-Posta Adresiniz
+                            <input id="email" type="email" name="email" required minlength="3" maxlength="30"
+                                class="form__input get-service__input">
+                        </label>
+                    </div>
+                    <div><label for="phone" class="text form__label get-service__label">Telefon numaranız
+                            <input id="phone" type="tel" name="phone" required pattern="\0\(\d{3}\)\d{3}\d{2}\d{2}"
+                                placeholder="0(___)_______" class="form__input get-service__input">
+                        </label>
+                        <div class="get-service__city-wrap">
+                            <label for="city" class="text form__label">Şehir Seçin
+                                <select id="city" name="city" class="form__select get-service__city-wrap__select">
+                                    <option value="antalya" selected>Antalya</option>
+                                </select>
+                            </label>
+                            <label for="district" class="text form__label">İlçe Seçin
+                                <select id="district" name="district"
+                                    class="form__select get-service__city-wrap__select">
+                                    <option value="akseki" selected>Akseki</option>
+                                    <option value="Aksu">Aksu</option>
+                                    <option value="Alanya">Alanya</option>
+                                    <option value="Demre">Demre</option>
+                                    <option value="Döşemealtı">Döşemealtı</option>
+                                    <option value="Elmalı">Elmalı</option>
+                                    <option value="Finike">Finike</option>
+                                    <option value="Gazipaşa">Gazipaşa</option>
+                                    <option value="Gündoğmuş">Gündoğmuş</option>
+                                    <option value="İbradı">İbradı</option>
+                                    <option value="Kaş">Kaş</option>
+                                    <option value="Kemer">Kemer</option>
+                                    <option value="Kepez">Kepez</option>
+                                    <option value="Konyaaltı">Konyaaltı</option>
+                                    <option value="Korkuteli">Korkuteli</option>
+                                    <option value="Kumluca">Kumluca</option>
+                                    <option value="Manavgat">Manavgat</option>
+                                    <option value="Muratpaşa">Muratpaşa</option>
+                                    <option value="Serik">Serik</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="h2 get-service__h2">Firma Bilgileri</h2>
+                <div class="get-service__wrap">
+                    <div>
+                        <label for="sector" class="text form__label get-service__label">Firma Sektörü
+                            <select for="sector" name="sector" class="form__select">
+                                <option value="Restoran">Restoran</option>
+                                <option value="Market">Market</option>
+                                <option value="Perakende">Perakende</option>
+                                <option value="Diğer">Diğer</option>
+                            </select>
+                        </label>
+                        <label for="branches" class="text form__label get-service__label">Toplam Şube Sayısı
+                            <input id="branches" type="text" name="branches" minlength="1" maxlength="20"
+                                class="form__input get-service__input">
+                        </label>
+                        <label for="courier-type" class="text form__label get-service__label">Talep Ettiğiniz Kurye Tipi
+                            <select for="courier-type" name="courier-type" class="form__select">
+                                <option value="Motorlu Kurye">Motorlu Kurye</option>
+                                <option value="Araçlı Kurye">Araçlı Kurye</option>
+                                <option value="Sezonluk Kurye">Sezonluk Kurye</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="company-name" class="text form__label get-service__label">Firma Adı
+                            <input for="company-name" type="text" name="company-name" required minlength="2"
+                                maxlength="20" class="form__input get-service__input">
+                        </label>
+                        <label for="date" class="text form__label get-service__label">Talep Ettiğiniz Başlangıç Tarihi
+                            <input id="date" type="date" name="date" class="form__input get-service__input">
+                        </label>
+                        <label for="courier-amount" class="text form__label get-service__label">Talep Ettiğiniz Kurye
+                            Sayısı
+                            <input id="courier-amount" type="text" name="courier-amount" minlength="1" maxlength="20"
+                                class="form__input get-service__input">
+                        </label>
+                    </div>
+                </div>
+                <div>
+                </div>
+                <div class="get-service__wrap__textarea">
+                    <label for="info" class="text form__label">Varsa Eklemek İstedikleriniz
+                        <textarea id="info" type="text" name="info" minlength="30" maxlength="300" rows="5" cols="33"
+                            class="form__textarea get-service__wrap__textarea__width"></textarea>
+                    </label>
+                    <button type="submit" class="button__white get-service__btn">Başvuru Gönder</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="container footer__contacts">
+            <div class="footer__contacts__block1">
+                <div><img src="images/main-page/moto-smile-img.png" alt="Mutlu Müşteri̇ Hatti"
+                        title="Mutlu Müşteri̇ Hatti" class="footer__img"></div>
+                <div>
+                    <p class="footer__contacts__text">Mutlu Müşteri̇ Hatti</p>
+                    <a href="tel:+908505325989" class="footer__contacts__link">
+                        <p class="footer__contacts__phone">0850 532 5989</p>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__contacts__block2">
+                <a href="https://facebook.com/motopack.com.tr" target="_blank"><img src="images/facebook-icon.svg"
+                        alt="Motopack Facebook" title="Motopack Facebook" class="footer__contacts__social-icon"></a>
+                <a href="https://instagram.com/motopack_" target="_blank"><img src="images/instagram-logo.svg"
+                        alt="Motopack Instagram" title="Motopack Instagram" class="footer__contacts__social-icon"></a>
+            </div>
+        </div>
+        <hr class="footer__line">
+        <div class="container footer__copyright">
+            <div class="footer__copyright__block1">
+                <p>2024 © Motopack Lojistik ve Teknoloji A.Ş. Tüm hakları saklıdır.</p>
+            </div>
+            <div class="footer__copyright__block2">
+                <a href="aydinlatma-metinleri.html"
+                    class="footer__copyright__link footer__copyright__link__divider">Aydınlatma Metinleri</a>
+                <a href="politikalar.html" class="footer__copyright__link">Politikalar</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script>toggleMenu();</script>
+</body>
+
+</html>
