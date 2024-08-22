@@ -51,6 +51,347 @@
         </nav>
     </div>
     <main>
+        <section class="be-courier container">
+            <h1 class="h1 be-courier__h1">Kurye Ol</h1>
+            <p class="text be-courier__text">MotoPack’e katılarak, her geçen gün hizmet verdiği restoranlar ve
+                şirketlere yenilerini ekleyerek büyüyen bu ekibin bir parçası olabilir ve aylık gelirlerinizi
+                artırabilirsiniz.</p>
+            <form action="" method="post" autocomplete="on" accept-charset="UTF-8">
+                <div class="be-courier__wrap">
+                    <div>
+                        <label for="vehicle-type" class="text form__label be-courier__label">Araç Tipi
+                            <select id="vehicle-type" name="vehicle-type" class="form__select be-courier__select">
+                                <option value="Motosiklet">Motosiklet</option>
+                                <option value="Elektrikli Bisiklet">Elektrikli Bisiklet</option>
+                                <option value="Araç / Minivan">Araç / Minivan</option>
+                                <option value="Panelvan">Panelvan</option>
+                                <option value="Kamyonet">Kamyonet</option>
+                                <option value="Zodyak">Zodyak</option>
+                            </select>
+                        </label>
+                        <label for="vehicle-brand" class="text form__label be-courier__label">Varsa Motorunuzun Marka /
+                            Modeli
+                            <input id="vehicle-brand" type="text" name="vehicle-brand" maxlength="30"
+                                class="form__input be-courier__input">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="employment-type" class="text form__label be-courier__label">Çalışma Dönemi
+                            <select id="employment-type" name="employment-type" class="form__select be-courier__select">
+                                <option value="Tam zamanlı">Tam zamanlı</option>
+                                <option value="Sezonluk">Sezonluk</option>
+                                <option value="Part Time">Part Time</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                <h2 class="h2 be-courier__h2">Kişisel Bilgiler</h2>
+                <div class="be-courier__wrap">
+                    <div><label for="nationality" class="text form__label be-courier__label">Uyruğunuz
+                            <select id="nationality" name="nationality" class="form__select be-courier__select">
+                                <option value="TC">TC</option>
+                                <option value="Diğer">Diğer</option>
+                            </select>
+                        </label>
+                        <label for="name" class="text form__label be-courier__label">Adınız
+                            <input id="name" type="text" name="name" maxlength="30"
+                                class="form__input be-courier__input" required>
+                        </label>
+                        <label for="birth-date" class="text form__label be-courier__label">Doğum Tarihi
+                            <input id="birth-date" type="date" name="birth-date" class="form__input be-courier__input">
+                        </label>
+                        <label for="military-status" class="text form__label be-courier__label">Askerlik Durumu
+                            <select id="military-status" name="military-status" class="form__select be-courier__select">
+                                <option value="Yapıldı">Yapıldı</option>
+                                <option value="Muaf">Muaf</option>
+                                <option value="Tecilli">Tecilli</option>
+                            </select>
+                        </label>
+                        <label for="education" class="text form__label be-courier__label">Eğitim Durumu
+                            <select id="education" name="education" class="form__select be-courier__select">
+                                <option value="İlköğretim">İlköğretim</option>
+                                <option value="Lise">Lise</option>
+                                <option value="Meslek Yüksek Okulu">Meslek Yüksek Okulu</option>
+                                <option value="Üniversite">Üniversite</option>
+                                <option value="Lisans Üstü">Lisans Üstü</option>
+                                <option value="Doktora">Doktora</option>
+                            </select>
+                        </label>
+                        <div>
+                            <label class="text form__label">Ehliyetiniz
+                            </label>
+                            <label for="A" class="text be-courier__label__checkbox">
+                                <input id="A" type="checkbox" name="A" class="">
+                                A
+                            </label>
+                            <label for="A1" class="text be-courier__label__checkbox">
+                                <input id="A1" type="checkbox" name="A1" class="">
+                                A1
+                            </label>
+                            <label for="A2" class="text be-courier__label__checkbox">
+                                <input id="A2" type="checkbox" name="A2" class="">
+                                A2
+                            </label>
+                            <label for="B" class="text be-courier__label__checkbox">
+                                <input id="B" type="checkbox" name="B" class="">
+                                B
+                            </label>
+                            <label for="C" class="text be-courier__label__checkbox">
+                                <input id="C" type="checkbox" name="C" class="">
+                                C
+                            </label>
+                            <label for="D" class="text be-courier__label__checkbox">
+                                <input id="D" type="checkbox" name="D" class="">
+                                D
+                            </label>
+                            <label for="E" class="text be-courier__label__checkbox">
+                                <input id="E" type="checkbox" name="E" class="">
+                                E
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="id-no" class="text form__label be-courier__label be-courier__label__mrgn">TC Kimlik
+                            No
+                            <input id="id-no" type="text" name="id-no" class="form__input be-courier__input"
+                                minlength="11" maxlength="11" required>
+                        </label>
+                        <label for="surname" class="text form__label be-courier__label">Soyadınız
+                            <input id="surname" type="text" maxlength="30" class="form__input be-courier__input"
+                                required>
+                        </label>
+                        <label for="gender" class="text form__label be-courier__label">Cinsiyet
+                            <select id="gender" name="gender" class="form__select be-courier__select">
+                                <option value="Erkek">Erkek</option>
+                                <option value="Kadın">Kadın</option>
+                            </select>
+                        </label>
+                        <label for="martial-status" class="text form__label be-courier__label">Medeni Durum
+                            <select id="martial-status" name="martial-status" class="form__select be-courier__select">
+                                <option value="Bekar">Bekar</option>
+                                <option value="Evli">Evli</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                <h2 class="h2 be-courier__h2">İletişim Bilgileri</h2>
+                <div class="be-courier__wrap">
+                    <div>
+                        <label for="phone" class="text form__label be-courier__label">Telefon Numaranız
+                            <input id="phone" type="phone" class="form__input be-courier__input" required>
+                        </label>
+                        <label for="city" class="text form__label be-courier__label">Şehir
+                            <select id="city" name="city" class="form__select be-courier__select">
+                                <option value="İstanbul">İstanbul</option>
+                                <option value="Ankara">Ankara</option>
+                                <option value="İzmir">İzmir</option>
+                                <option value="Adana">Adana</option>
+                                <option value="Adıyaman">Adıyaman</option>
+                                <option value="Afyon">Afyon</option>
+                                <option value="Ağri">Ağri</option>
+                                <option value="Aksaray">Aksaray</option>
+                                <option value="Amasya">Amasya</option>
+                                <option value="Antalya" selected>Antalya</option>
+                                <option value="Ardahan">Ardahan</option>
+                                <option value="Artvin">Artvin</option>
+                                <option value="Aydın">Aydın</option>
+                                <option value="Balıkesir">Balıkesir</option>
+                                <option value="Bartın">Bartın</option>
+                                <option value="Batman">Batman</option>
+                                <option value="Bayburt">Bayburt</option>
+                                <option value="Bilecik">Bilecik</option>
+                                <option value="Bingöl">Bingöl</option>
+                                <option value="Bitlis">Bitlis</option>
+                                <option value="Bolu">Bolu</option>
+                                <option value="Burdur">Burdur</option>
+                                <option value="Bursa">Bursa</option>
+                                <option value="Çanakkale">Çanakkale</option>
+                                <option value="Çankırı">Çankırı</option>
+                                <option value="Çorum">Çorum</option>
+                                <option value="Denizli">Denizli</option>
+                                <option value="Diyarbakır">Diyarbakır</option>
+                                <option value="Düzce">Düzce</option>
+                                <option value="Edirne">Edirne</option>
+                                <option value="Elaziğ">Elaziğ</option>
+                                <option value="Ercincan">Ercincan</option>
+                                <option value="Erzurum">Erzurum</option>
+                                <option value="Eskişehir">Eskişehir</option>
+                                <option value="Gaziantep">Gaziantep</option>
+                                <option value="Giresun">Giresun</option>
+                                <option value="Gümüşhane">Gümüşhane</option>
+                                <option value="Hakkari">Hakkari</option>
+                                <option value="Hatay">Hatay</option>
+                                <option value="Iğdır">Iğdır</option>
+                                <option value="Isparta">Isparta</option>
+                                <option value="Kahramanmaraş">Kahramanmaraş</option>
+                                <option value="Karabük">Karabük</option>
+                                <option value="Karaman">Karaman</option>
+                                <option value="Kars">Kars</option>
+                                <option value="Kastamonu">Kastamonu</option>
+                                <option value="Kayseri">Kayseri</option>
+                                <option value="Kilis">Kilis</option>
+                                <option value="Kırıkkale">Kırıkkale</option>
+                                <option value="Kırklareli">Kırklareli</option>
+                                <option value="Kırşehir">Kırşehir</option>
+                                <option value="Kocaeli">Kocaeli</option>
+                                <option value="Konya">Konya</option>
+                                <option value="Kütahya">Kütahya</option>
+                                <option value="Malatya">Malatya</option>
+                                <option value="Manisa">Manisa</option>
+                                <option value="Mardin">Mardin</option>
+                                <option value="Mersin">Mersin</option>
+                                <option value="Muğla">Muğla</option>
+                                <option value="Muş">Muş</option>
+                                <option value="Nevşehir">Nevşehir</option>
+                                <option value="Niğde">Niğde</option>
+                                <option value="Ordu">Ordu</option>
+                                <option value="Osmaniye">Osmaniye</option>
+                                <option value="Rize">Rize</option>
+                                <option value="Sakarya">Sakarya</option>
+                                <option value="Samsun">Samsun</option>
+                                <option value="Şanlıurfa">Şanlıurfa</option>
+                                <option value="Siirt">Siirt</option>
+                                <option value="Sinop">Sinop</option>
+                                <option value="Şırnak">Şırnak</option>
+                                <option value="Sivas">Sivas</option>
+                                <option value="Tekirdağ">Tekirdağ</option>
+                                <option value="Tokat">Tokat</option>
+                                <option value="Trabzon">Trabzon</option>
+                                <option value="Tunceli">Tunceli</option>
+                                <option value="Uşak">Uşak</option>
+                                <option value="Van">Van</option>
+                                <option value="Yalova">Yalova</option>
+                                <option value="Yozgat">Yozgat</option>
+                                <option value="Zonguldak">Zonguldak</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="email" class="text form__label be-courier__label">E-Posta Adresiniz
+                            <input id="email" type="email" class="form__input be-courier__input">
+                        </label>
+                        <label for="service-district" class="text form__label be-courier__label">Hizmet Verebileceğiniz
+                            İlçeler
+                            <input id="service-district" name="service-district" class="form__input be-courier__input">
+                        </label>
+                    </div>
+                </div>
+                <div class="be-courier__wrap__textarea">
+                    <label for="address" class="text form__label">Ev Adresiniz
+                        <textarea id="address" type="text" name="address" minlength="30" maxlength="300" rows="3"
+                            cols="33" class="form__textarea be-courier__wrap__textarea__width"></textarea>
+                    </label>
+                </div>
+                <h2 class="h2 be-courier__h2">İş Tecrübesi</h2>
+                <div class="be-courier__wrap">
+                    <div>
+                        <label for="experience" class="text form__label be-courier__label">Kuryelik Tecrübeniz
+                            <input id="experience" type="text" name="experience" class="form__input be-courier__input">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="experience-from" class="text form__label be-courier__label">Nerelerde Tecrübe
+                            Kazandınız?
+                            <input id="experience-from" type="text" name="experience-from"
+                                class="form__input be-courier__input">
+                        </label>
+                    </div>
+                </div>
+                <h3 class="h3 be-courier__h3">Çalıştığınız Yerler</h3>
+                <div class="be-courier__wrap">
+                    <div class="be-courier__wrap__inner">
+                        <label for="company-name-1" class="text form__label">Firma Adı
+                            <input id="company-name-1" type="text" name="company-name-1"
+                                class="form__input be-courier__input__small">
+                        </label>
+                        <label for="role-1" class="text form__label">Göreviniz
+                            <input id="role-1" type="text" name="role-1" class="form__input be-courier__input__small">
+                        </label>
+                    </div>
+                    <div class="be-courier__wrap__inner">
+                        <label for="start-date-1" class="text form__label">Başlangıç Tarihi
+                            <input id="start-date-1" type="date" name="start-date-1"
+                                class="form__input be-courier__input__small">
+                        </label>
+                        <label for="end-date-1" class="text form__label">Ayrılma Tarihi
+                            <input id="end-date-1" type="date" name="end-date-1"
+                                class="form__input be-courier__input__small">
+                        </label>
+                    </div>
+                </div>
+                <div class="be-courier__wrap__textarea">
+                    <label for="leaving-reason-1" class="text form__label">Ayrılma Nedeni
+                        <textarea id="leaving-reason-1" type="text" name="leaving-reason-1" minlength="30"
+                            maxlength="300" rows="3" cols="33"
+                            class="form__textarea be-courier__wrap__textarea__width"></textarea>
+                    </label>
+                </div>
+                <div class="be-courier__wrap">
+                    <div class="be-courier__wrap__inner">
+                        <label for="company-name-2" class="text form__label">Firma Adı
+                            <input id="company-name-2" type="text" name="company-name-2"
+                                class="form__input be-courier__input__small">
+                        </label>
+                        <label for="role-2" class="text form__label">Göreviniz
+                            <input id="role-2" type="text" name="role-2" class="form__input be-courier__input__small">
+                        </label>
+                    </div>
+                    <div class="be-courier__wrap__inner">
+                        <label for="start-date-2" class="text form__label">Başlangıç Tarihi
+                            <input id="start-date-2" type="date" name="start-date-2"
+                                class="form__input be-courier__input__small">
+                        </label>
+                        <label for="end-date-2" class="text form__label">Ayrılma Tarihi
+                            <input id="end-date-2" type="date" name="end-date-2"
+                                class="form__input be-courier__input__small">
+                        </label>
+                    </div>
+                </div>
+                <div class="be-courier__wrap__textarea">
+                    <label for="leaving-reason-2" class="text form__label">Ayrılma Nedeni
+                        <textarea id="leaving-reason-2" type="text" name="leaving-reason-2" minlength="30"
+                            maxlength="300" rows="3" cols="33"
+                            class="form__textarea be-courier__wrap__textarea__width"></textarea>
+                    </label>
+                </div>
+                <div class="be-courier__wrap">
+                    <div class="be-courier__wrap__inner">
+                        <label for="company-name-3" class="text form__label">Firma Adı
+                            <input id="company-name-3" type="text" name="company-name-3"
+                                class="form__input be-courier__input__small">
+                        </label>
+                        <label for="role-3" class="text form__label">Göreviniz
+                            <input id="role-3" type="text" name="role-3" class="form__input be-courier__input__small">
+                        </label>
+                    </div>
+                    <div class="be-courier__wrap__inner">
+                        <label for="start-date-3" class="text form__label">Başlangıç Tarihi
+                            <input id="start-date-3" type="date" name="start-date-3"
+                                class="form__input be-courier__input__small">
+                        </label>
+                        <label for="end-date-3" class="text form__label">Ayrılma Tarihi
+                            <input id="end-date-3" type="date" name="end-date-3"
+                                class="form__input be-courier__input__small">
+                        </label>
+                    </div>
+                </div>
+                <div class="be-courier__wrap__textarea">
+                    <label for="leaving-reason-3" class="text form__label">Ayrılma Nedeni
+                        <textarea id="leaving-reason-3" type="text" name="leaving-reason-3" minlength="30"
+                            maxlength="300" rows="3" cols="33"
+                            class="form__textarea be-courier__wrap__textarea__width"></textarea>
+                    </label>
+                </div>
+                <div class="be-courier__wrap__textarea">
+                    <label for="notes" class="text form__label">Notlar
+                        <textarea id="notes" type="text" name="notes" minlength="30" maxlength="300" rows="4" cols="33"
+                            class="form__textarea be-courier__wrap__textarea__width"
+                            placeholder="Özgeçmişinize eklemek istediğiniz, doldurduğunuz bilgiler dışında başka detaylar varsa, bu alanı kullanarak yazabilirsiniz."></textarea>
+                    </label>
+                    <button type="submit" class="button__white be-courier__btn">Başvuru Gönder</button>
+                </div>
+            </form>
+        </section>
 
     </main>
     <footer class="footer">

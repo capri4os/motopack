@@ -75,13 +75,13 @@
                         <div class="get-service__city-wrap">
                             <label for="city" class="text form__label">Şehir Seçin
                                 <select id="city" name="city" class="form__select get-service__city-wrap__select">
-                                    <option value="antalya" selected>Antalya</option>
+                                    <option value="Antalya">Antalya</option>
                                 </select>
                             </label>
                             <label for="district" class="text form__label">İlçe Seçin
                                 <select id="district" name="district"
                                     class="form__select get-service__city-wrap__select">
-                                    <option value="akseki" selected>Akseki</option>
+                                    <option value="Akseki">Akseki</option>
                                     <option value="Aksu">Aksu</option>
                                     <option value="Alanya">Alanya</option>
                                     <option value="Demre">Demre</option>
@@ -98,7 +98,7 @@
                                     <option value="Korkuteli">Korkuteli</option>
                                     <option value="Kumluca">Kumluca</option>
                                     <option value="Manavgat">Manavgat</option>
-                                    <option value="Muratpaşa">Muratpaşa</option>
+                                    <option value="Muratpaşa" selected>Muratpaşa</option>
                                     <option value="Serik">Serik</option>
                                 </select>
                             </label>
@@ -109,7 +109,7 @@
                 <div class="get-service__wrap">
                     <div>
                         <label for="sector" class="text form__label get-service__label">Firma Sektörü
-                            <select for="sector" name="sector" class="form__select">
+                            <select id="sector" name="sector" class="form__select">
                                 <option value="Restoran">Restoran</option>
                                 <option value="Market">Market</option>
                                 <option value="Perakende">Perakende</option>
@@ -121,7 +121,7 @@
                                 class="form__input get-service__input">
                         </label>
                         <label for="courier-type" class="text form__label get-service__label">Talep Ettiğiniz Kurye Tipi
-                            <select for="courier-type" name="courier-type" class="form__select">
+                            <select id="courier-type" name="courier-type" class="form__select">
                                 <option value="Motorlu Kurye">Motorlu Kurye</option>
                                 <option value="Araçlı Kurye">Araçlı Kurye</option>
                                 <option value="Sezonluk Kurye">Sezonluk Kurye</option>
@@ -130,7 +130,7 @@
                     </div>
                     <div>
                         <label for="company-name" class="text form__label get-service__label">Firma Adı
-                            <input for="company-name" type="text" name="company-name" required minlength="2"
+                            <input id="company-name" type="text" name="company-name" required minlength="2"
                                 maxlength="20" class="form__input get-service__input">
                         </label>
                         <label for="date" class="text form__label get-service__label">Talep Ettiğiniz Başlangıç Tarihi

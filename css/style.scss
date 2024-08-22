@@ -801,7 +801,8 @@ $mobile-320-container-width: 280px;
             align-items: center;
 
             &__width {
-                width: 890px;
+                width: 1000px;
+                margin-bottom: 50px;
             }
         }
     }
@@ -822,6 +823,79 @@ $mobile-320-container-width: 280px;
 
     &__input {
         width: 390px;
+    }
+}
+
+// Kurye ol page
+.be-courier {
+    padding: 100px 0;
+
+    &__h1 {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    &__h2 {
+        text-align: center;
+        padding: 50px 0 35px;
+    }
+
+    &__h3 {
+        text-align: center;
+        padding: 35px 0 25px;
+    }
+
+    &__text {
+        text-align: center;
+        padding-bottom: 70px;
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    &__wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        &__textarea {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__width {
+                width: 1000px;
+            }
+        }
+
+        &__inner {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+    &__label {
+        width: 390px;
+
+        &__checkbox {
+            margin-right: 10px;
+        }
+    }
+
+    &__input {
+        width: 390px;
+
+        &__small {
+            width: 180px;
+            margin-right: 15px;
+        }
+    }
+
+    &__select {
+        width: 390px;
+    }
+
+    &__btn {
+        margin-top: 50px;
     }
 }
 
@@ -863,6 +937,26 @@ $mobile-320-container-width: 280px;
 
     .values__item__text {
         width: 95%;
+    }
+
+    .get-service {
+        &__wrap {
+            &__textarea {
+                &__width {
+                    width: 890px;
+                }
+            }
+        }
+    }
+
+    .be-courier {
+        &__wrap {
+            &__textarea {
+                &__width {
+                    width: 890px;
+                }
+            }
+        }
     }
 }
 
@@ -981,8 +1075,24 @@ $mobile-320-container-width: 280px;
         }
     }
 
-    .get-service__wrap__textarea__width {
-        width: 820px;
+    .get-service {
+        &__wrap {
+            &__textarea {
+                &__width {
+                    width: 820px;
+                }
+            }
+        }
+    }
+
+    .be-courier {
+        &__wrap {
+            &__textarea {
+                &__width {
+                    width: 820px;
+                }
+            }
+        }
     }
 }
 
@@ -1257,6 +1367,38 @@ $mobile-320-container-width: 280px;
             }
         }
     }
+
+    .be-courier {
+        padding: 70px 0;
+
+        &__h2 {
+            padding: 50px 0 25px;
+        }
+
+        &__label {
+            width: 300px;
+        }
+
+        &__input {
+            width: 300px;
+
+            &__small {
+                width: 135px;
+            }
+        }
+
+        &__select {
+            width: 300px;
+        }
+
+        &__wrap {
+            &__textarea {
+                &__width {
+                    width: 600px;
+                }
+            }
+        }
+    }
 }
 
 // Phone styles
@@ -1458,6 +1600,44 @@ $mobile-320-container-width: 280px;
             width: 360px;
         }
     }
+
+    .be-courier {
+        padding: 50px 0;
+
+        &__h2 {
+            padding: 30px 0 15px;
+        }
+
+        &__text {
+            width: 90%;
+        }
+
+        &__wrap {
+            flex-direction: column;
+
+            &__textarea {
+                &__width {
+                    width: 360px;
+                }
+            }
+        }
+
+        &__label {
+            width: 360px;
+        }
+
+        &__input {
+            width: 360px;
+
+            &__small {
+                width: 170px;
+            }
+        }
+
+        &__select {
+            width: 360px;
+        }
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -1551,10 +1731,42 @@ $mobile-320-container-width: 280px;
         &__input {
             width: 310px;
         }
+
+        &__city-wrap {
+            &__select {
+                width: 130px;
+            }
+        }
     }
 
-    .get-service__city-wrap__select {
-        width: 130px;
+    .be-courier {
+        &__wrap {
+            &__textarea {
+                &__width {
+                    width: 310px;
+                }
+            }
+        }
+
+        &__label {
+            width: 310px;
+
+            &__mrgn {
+                margin-top: 20px;
+            }
+        }
+
+        &__input {
+            width: 310px;
+
+            &__small {
+                width: 150px;
+            }
+        }
+
+        &__select {
+            width: 310px;
+        }
     }
 }
 
@@ -1600,9 +1812,41 @@ $mobile-320-container-width: 280px;
                 }
             }
         }
+
+        &__city-wrap {
+            &__select {
+                width: 130px;
+            }
+        }
     }
 
-    .get-service__city-wrap__select {
-        width: 130px;
+    .be-courier {
+        &__wrap {
+            &__textarea {
+                &__width {
+                    width: 280px;
+                }
+            }
+        }
+
+        &__label {
+            width: 280px;
+
+            &__mrgn {
+                margin-top: 20px;
+            }
+        }
+
+        &__input {
+            width: 280px;
+
+            &__small {
+                width: 130px;
+            }
+        }
+
+        &__select {
+            width: 280px;
+        }
     }
 }
