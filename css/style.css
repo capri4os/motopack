@@ -18,12 +18,18 @@
   color: #f3f9fa;
   font-size: 18px;
   text-decoration: none;
-  border: 1px solid #f3f9fa;
+  border: 2px solid rgba(255, 255, 255, 0.8);
   border-radius: 20px;
   text-transform: uppercase;
   background-color: #0a0a0a;
   padding: 8px 30px;
   margin-left: 15px;
+}
+.button__black:hover {
+  border: 2px solid #f3f9fa;
+}
+.button__black:active {
+  border: 2px solid #D9D9D9;
 }
 
 .button__white {
@@ -33,12 +39,16 @@
   color: #0a0a0a;
   font-size: 18px;
   text-decoration: none;
-  border: 1px solid #0a0a0a;
+  border: 2px solid #0a0a0a;
   border-radius: 20px;
   text-transform: uppercase;
   background-color: #f3f9fa;
   padding: 8px 30px;
   margin-left: 15px;
+}
+.button__white:hover {
+  color: rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(0, 0, 0, 0.5);
 }
 
 .drop-cap {
@@ -96,6 +106,10 @@
   cursor: pointer;
 }
 
+.button {
+  cursor: pointer;
+}
+
 .header {
   background-color: #0a0a0a;
   display: flex;
@@ -131,6 +145,9 @@
   margin-left: 45px;
   text-decoration: none;
   color: #f3f9fa;
+}
+.menu__item:hover {
+  color: #2ebadc;
 }
 
 .mobile-menu {
@@ -183,7 +200,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 50px 0;
+  padding: 50px 0 40px;
 }
 .footer__contacts__block1 {
   display: flex;
@@ -204,6 +221,9 @@
   padding-top: 10px;
   cursor: pointer;
 }
+.footer__contacts__phone:hover {
+  color: #2ebadc;
+}
 .footer__contacts__social-icon {
   width: 35px;
 }
@@ -215,7 +235,7 @@
   width: 1500px;
 }
 .footer__copyright {
-  padding: 50px 0 70px;
+  padding: 40px 0 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -224,6 +244,9 @@
 .footer__copyright__link {
   color: #f3f9fa;
   text-decoration: none;
+}
+.footer__copyright__link:hover {
+  color: #2ebadc;
 }
 .footer__copyright__link__divider::after {
   content: "|";
@@ -348,6 +371,7 @@
 }
 .services__items__h3 {
   text-align: center;
+  padding-bottom: 10px;
 }
 .services__items__text {
   width: 80%;
@@ -388,6 +412,9 @@
 .story__h1 {
   padding-bottom: 40px;
 }
+.story__h2 {
+  padding-bottom: 40px;
+}
 .story__texts {
   display: flex;
   flex-direction: row;
@@ -424,7 +451,7 @@
 .values__item__h3 {
   font-size: 32px;
   font-weight: bold;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 .values__item__text {
   text-align: center;
@@ -477,7 +504,7 @@
   padding-bottom: 20px;
 }
 .featured-services__list__item__h3 {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 .featured-services__list__item__text {
   width: 80%;
@@ -615,6 +642,16 @@
 .contact-form__btn {
   margin-top: 50px;
 }
+.contact-form__btn:hover {
+  cursor: pointer;
+}
+.contact-form__link {
+  text-decoration: none;
+  cursor: pointer;
+}
+.contact-form__link:hover {
+  color: #2ebadc;
+}
 
 .form__label {
   display: flex;
@@ -684,6 +721,9 @@
 .get-service__input {
   width: 390px;
 }
+.get-service__btn {
+  cursor: pointer;
+}
 
 .be-courier {
   padding: 100px 0;
@@ -741,6 +781,9 @@
 }
 .be-courier__btn {
   margin-top: 50px;
+}
+.be-courier__btn:hover {
+  cursor: pointer;
 }
 
 .politics {
@@ -1089,7 +1132,12 @@
     width: 600px;
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 600px) {
+  .header {
+    padding: 15px 15px;
+  }
+}
+@media screen and (max-width: 600px) and (max-width: 425px) {
   .container,
   .footer__line {
     max-width: 365px;
@@ -1198,6 +1246,13 @@
   .values__item__text {
     width: 80%;
   }
+  .values__item__img {
+    width: 75px;
+    padding: 10px;
+  }
+  .values__h2 {
+    padding-bottom: 50px;
+  }
   .facilities__wrap,
   .featured-services,
   .reasons,
@@ -1263,7 +1318,7 @@
     width: 360px;
   }
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 600px) and (max-width: 375px) {
   .container,
   .footer__line {
     max-width: 315px;
@@ -1343,18 +1398,21 @@
     width: 310px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 600px) and (max-width: 320px) {
   .container,
   .footer__line {
     max-width: 280px;
   }
-  .header__menu__icon {
-    width: 25px;
+  .header {
+    padding: 15px 15px;
   }
   .header__logo {
     width: 120px;
     height: 24px;
     padding-left: 10px;
+  }
+  .header__menu__icon {
+    width: 25px;
   }
   .button__black,
   .button__white {
